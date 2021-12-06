@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title></title>
+    <script src="myScript.js"></script>
+    <title>Media Gallery</title>
   </head>
   <body>
     <div class="nav">
@@ -16,36 +17,136 @@
       </ul>
     </div>
 
-  <div class="header">
-    <div class="h1">
-      <img class="img" src="Pictures\pic1.jpg"/>
-    </div>
+
     <div class="hlist">
-      <ul>
-        <li><img class="img1" src="Pictures\pic1.jpg" /></li>
-        <li><img class="img2" src="Pictures\pic2.webp"/></li>
-        <li><img class="img3" src="Pictures\pic3.JPG"/></li>
-        <li><img class="img4" src="Pictures\pic4.webp"/></li>
-      </ul>
+
+      <div class="mySlides">
+  <div class="numbertext">1 / 4</div>
+    <img src="Pictures\pic1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+   <div class="numbertext">2 / 4</div>
+     <img src="Pictures\pic2.webp" style="width:100%">
+ </div>
+
+ <div class="mySlides">
+   <div class="numbertext">3 / 4</div>
+     <img src="Pictures\pic3.JPG" style="width:100%">
+ </div>
+
+ <div class="mySlides">
+   <div class="numbertext">4 / 4</div>
+     <img src="Pictures\pic4.webp" style="width:100%">
+ </div>
     </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+  <p>"Some gorgeous pictures of our perfect Earth."</p>
+</div>
+
+    <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Pictures\pic1.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Pictures\pic2.webp" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Pictures\pic3.JPG" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Pictures\pic4.webp" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
   </div>
+</div>
+
+
+
   <div class="grid">
-      <div class="card">
-        <img class="img5" src="Pictures\pic5.jpg" />
-        <h4>Title</h4>
-        <p>Some text goes here a little longer.</p>
+      <div class="card1">
+        <img id="myImg" class="img5" src="Pictures\pic5.jpg" />
+        <h4>Ruins</h4>
+        <p>These look like some dope ruins. Definitely come here sometime.</p>
       </div>
+
+      <div class="card2">
       <img class="img6" src="Pictures\pic6.JPG" />
+      <h4>Roots Over A Lake</h4>
+      <p>The tree roots look kinda sick here. Wouldn't you agree?</p>
+    </div>
+
+    <div class="card3">
       <img class="img7" src="Pictures\pic7.jpg" />
+      <h4>Rainbow In the Canyon</h4>
+      <p>Interesting that you can see the start and end of the rainbow here. That's not usually a thing.</p>
+      </div>
+
+      <div class="card4">
       <img class="img8" src="Pictures\pic8.jpg" />
+      <h4>Mountains and a Lake</h4>
+      <p>This looks like everywhere in British Columbia ever. Gorgeous photo though.</p>
+      </div>
+
+      <div class="card5">
       <img class="img9" src="Pictures\pic9.webp" />
+      <h4>Rainbow Waterfall</h4>
+      <p>No clue where this is located, but I will go there eventually. If this is photoshopped, I will be very disappointed.</p>
+      </div>
+
+      <div class="card6">
       <img class="img10" src="Pictures\pic10.jpg" />
+      <h4>Ring of Fire</h4>
+      <p>Looks like a ring of fire. It's pretty dope.</p>
+      </div>
+
+      <div class="card7">
       <img class="img11" src="Pictures\pic11.jpg" />
+      <h4>Rocky Valley</h4>
+      <p>Pretty valley. Prettier sky. Would definitely want to get some nice pics here.</p>
+      </div>
+
+      <div class="card8">
       <img class="img12" src="Pictures\pic12.webp" />
+      <h4>Mountains and a Lake pt.2</h4>
+      <p>More mountains and a lake but still very pretty. This one does not look like all of British Columbia though.</p>
+      </div>
+
+      <div class="card9">
       <img class="img13" src="Pictures\pic13.webp" />
+      <h4>Trees and the Sky</h4>
+      <p>No cluse if that's a sunset or sunrise or what but its gorgeous. Also, the trees are definitely photoshopped.</p>
+      </div>
+
+      <div class="card10">
       <img class="img14" src="Pictures\pic14.webp" />
+      <h4>Waterfall Outlook</h4>
+      <p>Looks like a place where monks live. Very peacefull</p>
+      </div>
+
+      <div class="card11">
       <img class="img15" src="Pictures\pic15.webp" />
+      <h4>Sunset Valley</h4>
+      <p>Looks like a sunset over a valley to me.</p>
+      </div>
+
+      <div class="card12">
       <img class="img16" src="Pictures\pic16.JPG" />
+      <h4>Stream Between Two Mountains</h4>
+      <p>Just a river or stream or whatever flowing through two mountains. Pretty, but I've seen better.</p>
+      </div>
   </div>
+
+  <div id="myModal" class="modal">
+
+  <span class="close">&times;</span>
+
+  <img class="modal-content" id="img01">
+</div>
+
   </body>
 </html>
